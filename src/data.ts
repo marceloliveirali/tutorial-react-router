@@ -35,3 +35,11 @@ export function getInvoices()
 {
     return invoices;
 }
+
+function getInvoice(number: number)
+{
+    return invoices.find((invoice) => invoice.number === number);
+}
+
+export default getInvoice;
+
